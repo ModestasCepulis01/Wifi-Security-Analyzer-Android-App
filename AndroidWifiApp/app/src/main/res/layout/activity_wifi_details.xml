@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/darkbg">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="320dp"
+        android:layout_height="398dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="212dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/detailsbgg"
+        app:layout_constraintBottom_toTopOf="@+id/inputWifiPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSuggestWifi"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/scanbutton"
+        android:text="Suggest WiFi"
+        android:textColor="#FFBC00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputWifiPass"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/scanbutton"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="text|textPassword"
+        android:textAlignment="center"
+        android:hint="INPUT WIFI PASSWORD"
+        android:textColorHint="#c79300"
+        android:textColor="#d69e00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/WifiListDetails"
+        android:layout_width="298dp"
+        android:layout_height="376dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

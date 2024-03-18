@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.WiFiSecurityAnalyzer" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Basic theme settings to test -->
+    </style>
+</resources>
